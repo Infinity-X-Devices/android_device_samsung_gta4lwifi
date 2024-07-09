@@ -22,7 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/gta4lwifi/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+
+# # Inherit some common crDroid stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4lwifi
