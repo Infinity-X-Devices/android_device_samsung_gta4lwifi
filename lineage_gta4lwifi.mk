@@ -24,8 +24,13 @@ $(call inherit-product, device/samsung/gta4lwifi/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
-# # Inherit some common crDroid stuff
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Matrixx
+MATRIXX_BUILD_TYPE := Official
+MATRIXX_MAINTAINER := Aryan
+MATRIXX_CHIPSET := SM6115
+MATRIXX_BATTERY := 7040mAh
+MATRIXX_DISPLAY := 1200x2000
+WITH_GMS := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4lwifi
